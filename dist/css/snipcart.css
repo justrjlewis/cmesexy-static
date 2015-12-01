@@ -1,0 +1,35 @@
+.snipcart-product {
+position: relative;
+}
+.snipcart-summary {
+color:white;
+font-size: 14px;
+font-weight: 300;
+}
+.snipcart-product-image
+.snipcart-product-price {
+font-size:24px;
+text-align:center;
+}
+.snipcart-product-name {
+  font-size: 20px;
+  text-align:center;
+}
+.snipcart-button-holder {
+  background-color: #cc3d89;
+  border-radius: 4px;
+  color: white;
+  margin: 0 auto;
+  margin-top: 5px;
+  padding: 5px 2px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  width: 100px;
+}
+.snipcart-button-holder:hover {
+background-color: #b42f76;
+}
+a.snipcart-add-item {
+  color: white !important;
+}
