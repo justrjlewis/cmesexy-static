@@ -1,0 +1,81 @@
+<!doctype html>
+<html  lang="en">
+  <head>
+    <!-- 
+      Copyright (c) RJ Lewis| http://justrjlewis.com/ 
+    -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>
+      {% if page.title %}
+        {{ page.title }}
+      {% else %}
+        Default Page Title
+      {% endif %}
+    </title>
+    
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/app-old-ie.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+      <!-- <link href="../css/jquery.mmenu.css" type="text/css" rel="stylesheet" /> -->
+      <link rel="stylesheet" href="/dist/css/app.css">
+      <link rel="stylesheet" href="/dist/typography.css">   
+    <!--<![endif]-->
+      <link rel="stylesheet" href="/dist/foundation-icons/foundation-icons.css">
+    
+    <!-- <script src="../js/modernizr.js"></script> -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!--[if gt IE 8]><!-->
+    <script type="text/javascript" src="/dist/js/jquery.mmenu.min.js"></script>
+    <script type="text/javascript" src="/dist/js/jquery.mmenu.offcanvas.min.js"></script>
+    <!--<![endif]-->
+  </head>
+  <body>
+    <a name="top" id="top"></a>
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="canvas">
+      <header>
+        <div class="pre-header">
+          <a href="#">Shopping Bag</a>
+        </div>
+<!-- nav area -->
+  {% include nav.html %}
+      </header>
+<!-- end header -->
+  {{ content }}
+<!-- begin footer -->
+      <footer>
+        <div class="row">
+          <div class="page">
+            <div class="checkout">
+              View Shopping Cart!
+            </div>
+            <div class="copyright">
+              &copy; 2014 C Me Sexy
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="page">
+            <small>
+              Website by: <a href="justrjlewis.com">RJ Lewis</a>
+            </small>
+            <small>
+              Powered by: <a href="http://www.concrete5.org/">Concrete5</a>
+            </small>
+            <small>
+              <a href="#">Sign in to edit this site!</a>
+            </small>
+          </div>
+        </div>
+      </footer>
+    </div> <!-- end canvas -->
+      <script src="/dist/js/app.js"></script>
+    </body>
+  </html>
