@@ -3,7 +3,7 @@ layout: default
 image_path: ""
 ---
 <section class="main-section home" data-equalizer>
-  <div class="left-side jrj-panel" data-equalizer-watch>
+  <div class="left-side jrj-panel editable" data-equalizer-watch>
     <h2 class="sexy-pink">{{ page.title }}</h2>
     <div style="margin-top:-10px; margin-bottom: 10px; font-size:80%;">
       Posted: {{ post.date | date: "%d %B %Y" }}
@@ -11,7 +11,7 @@ image_path: ""
     </div>
     {{ page.content }}
   </div>
-  <div class="right-side jrj-panel" data-equalizer-watch>
+  <div class="right-side jrj-panel editable" data-equalizer-watch>
     <img src="{{ page.image_path }}" alt="{{ page.title }} article image"/>
     {{ page.content }}
   </div>
