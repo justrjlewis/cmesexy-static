@@ -26,6 +26,13 @@ image_path: ""
             Posted on {{ post.date | date: "%B %d, %Y" }}
           </div>
         </div>
+        <div class="excerpt">
+          {{ post.content }}
+        </div>
+        <div class="meta">
+          <a href="{{ post.url }}">Read full post &raquo;</a>
+        </div>
+        <hr class="blog-entry-divider"/>
       </div>
     {% endfor %}
   </div>
