@@ -9,10 +9,17 @@ post_image_path: "/uploads/icon.png"
     <div style="margin-top:-10px; margin-bottom: 10px; font-size:80%;">
       Posted: {{ page.date | date: "%B %d, %Y" }}
     </div>
-    <p class="editable">{{ content }}</p>
+    <p class="editable">
+      <img src="{{ page.post_image_path }}" alt="Article image" />
+      {{ page.description}}
+      {{ content }}
+    </p>
   </div>
   <div class="right-side jrj-panel" data-equalizer-watch>
-    <p class=""></p>
+    <p class="">
+      
+
+    </p>
   </div>
 </section>
 
