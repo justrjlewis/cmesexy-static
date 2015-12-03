@@ -8,8 +8,8 @@ layout: default
       Posted: {{ page.date | date: "%B %d, %Y" }}
     </div>
     <p class="">
-      <img src="{{ post_image_path }}" alt="Article image" /> <br>
-      {{ description}}
+      <img src="{{ page.post_image_path }}" alt="Article image" /> <br>
+      {{ page.description}}
       {{ content }}
     </p>
   </div>
