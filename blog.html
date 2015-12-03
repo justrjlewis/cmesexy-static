@@ -1,8 +1,6 @@
 ---
 layout: default
 title: C Me Sexy Blog
-description: A blog with the latest trends and news in Web Design
-image_path: ""
 ---
 <div class="main-section right-side-on-top">
   <div class="right-side jrj-panel">
@@ -27,7 +25,8 @@ image_path: ""
           </div>
         </div>
         <div class="excerpt">
-          {{ post.content }}
+          <img src="{{ post.post_image_path }}" alt="Article image" />
+          {{ post.description | truncate: 220}}
         </div>
         <div class="meta">
           <a href="{{ post.url }}">Read full post &raquo;</a>
